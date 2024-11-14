@@ -1,0 +1,84 @@
+/* Tổng quan */
+body {
+    background-image: radial-gradient( gray, black);
+    background-repeat: no-repeat;
+    height:max-content;
+}
+
+/* Tiêu đề của trang */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #d9d9d9c6;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Các khung nhỏ cho từng phòng */
+.small-box {
+    background-color: #d9d9d9c6;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Chỉnh sửa hình ảnh trong phần carousel */
+.small-box img {
+    border-radius: 8px;
+    margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+}
+
+.carousel-inner img {
+    border-radius: 8px;
+    height: 500px; /* Chiều cao hình ảnh trong carousel */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+/* Mô tả phòng */
+.small-box p {
+    margin-top: 10px; /* Khoảng cách giữa hình ảnh và mô tả */
+    font-size: 16px;   /* Kích thước chữ */
+    line-height: 1.5;  /* Khoảng cách dòng */
+}
+
+/* Phần hiển thị giá và nút Đặt phòng */
+.room-info {
+    display: flex;
+    justify-content: space-between; /* Canh chỉnh đều giữa loại phòng, giá và nút */
+    align-items: center;
+    margin-top: 15px; /* Khoảng cách với phần mô tả */
+}
+
+/* Phần loại phòng */
+.room-type p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Phần giá phòng */
+.room-price p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Nút Đặt phòng */
+.room-booking button {
+    background-color: black;  /* Màu nền đen */
+    color: white;             /* Màu chữ trắng */
+    border: 2px solid black; /* Đường viền màu đen */
+    padding: 10px 20px;      /* Khoảng cách bên trong nút */
+    font-size: 16px;         /* Kích thước chữ */
+    border-radius: 5px;      /* Bo góc nút */
+    cursor: pointer;        /* Con trỏ thay đổi khi hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Hiệu ứng khi hover */
+}
+
+/* Thêm hiệu ứng hover cho nút */
+.room-booking button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
